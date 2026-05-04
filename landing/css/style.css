@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "bold";
+  src: url("../assets/fonts/linespeed/LINESeedJP-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ebold";
+  src: url("../assets/fonts/linespeed/LINESeedJP-ExtraBold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../assets/fonts/linespeed/LINESeedJP-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "thin";
+  src: url("../assets/fonts/linespeed/LINESeedJP-Thin.ttf") format("truetype");
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(../assets/img/tds/fundo.png);
+  background-size: cover; /* cobre toda a tela */
+  background-position: center; /* centraliza */
+  background-repeat: no-repeat; /* não repete */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(circle, #79d7ff, transparent 70%);
+  filter: blur(200px);
+
+  z-index: -1;
+}
+
+.urgente {
+  margin-bottom: 70px;
+  font-family: ebold;
+  background-color: #e50914;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.icon {
+  margin-top: -35px;
+  width: 50px;
+}
+
+.hero {
+  position: relative; /* 🔥 referência pras estrelas */
+  display: flex;
+  justify-content: center;
+}
+
+.stars img {
+  position: absolute;
+}
+
+.estrela1 {
+  top: 150px;
+  left: 20%;
+  transform: rotate(15deg);
+  width: 40px;
+}
+
+.estrela2 {
+  top: -70px;
+  right: 20%;
+  width: 80px;
+}
+
+.estrela3 {
+  bottom: -60px;
+  left: 1200px;
+  width: 20px;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: ebold;
+  text-align: center;
+  margin: 0;
+
+  line-height: 1.2;
+  padding: 5px 0;
+
+  background: linear-gradient(to right, #008cff, #005499);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position: relative;
+  z-index: 1;
+
+  text-shadow: 0 0 20px rgba(0, 140, 255, 0.4);
+}
+
+.importante {
+  font-family: ebold;
+  color: #1a00ff;
+}
+
+h2 {
+  font-family: bold;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  margin: 0;
+}
+
+h3 {
+  font-family: thin;
+  margin-left: 400px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.bloco-preco {
+  position: relative; /* necessário pro absolute funcionar */
+  display: flex;
+  justify-content: center; /* centraliza o preço atual */
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* PREÇO ANTIGO (sai do fluxo, não interfere no centro) */
+.ant--preco {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-220px); /* ajusta a posição lateral */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: regular;
+  color: black;
+}
+
+.de {
+  font-size: 12px;
+}
+
+.valor {
+  font-size: 18px;
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+}
+
+/* PREÇO ATUAL (fica realmente centralizado) */
+.preco {
+  display: flex;
+  align-items: flex-start;
+  font-family: ebold;
+  color: #1a00ff;
+}
+
+.prefixo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.parcelado {
+  font-size: 16px;
+}
+
+.sifrao {
+  font-size: 28px;
+}
+
+.atual--valor {
+  font-size: 180px;
+  line-height: 1;
+}
+
+.centavos {
+  font-size: 40px;
+  align-self: flex-start;
+  margin-top: 15px;
+}
+
+.vitalicio {
+  text-align: center;
+  font-family: ebold;
+  color: #e50914;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.cta button {
+  text-align: center;
+  background: linear-gradient(45deg, #00b41b, #00e62e);
+  color: white;
+  border: none;
+  padding: 20px 42px;
+  font-size: 18px;
+  font-family: ebold;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 180, 27, 0.4);
+  transition: all 0.3s ease;
+}
+
+.cta button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 180, 27, 0.6);
+}
+
+@media (max-width: 390px) {
+  .urgente {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  h2 br {
+    display: none;
+  }
+
+  .stars {
+    display: none;
+  }
+
+  .bloco-preco {
+    margin-top: 15px;
+    flex-direction: column; /* 🔥 empilha */
+    align-items: center;
+
+  }
+
+  .ant--preco {
+    position: static; /* 🔥 tira o absolute */
+    transform: none;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .atual--valor {
+  font-size: 100px;
+  line-height: 1;
+}
+
+.vitalicio {
+  font-size: 30px;
+}
+
+.cta button {
+  font-size: 20px;
+}
