@@ -114,14 +114,13 @@ h1 {
   line-height: 1.2;
   padding: 5px 0;
 
-  background: linear-gradient(to right, #008cff, #005499);
+  background: linear-gradient(to right, #001affa8, #1047ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   position: relative;
   z-index: 1;
-
-  text-shadow: 0 0 20px rgba(0, 140, 255, 0.4);
+  text-shadow: 0 0 20px rgba(0, 17, 255, 0.4);
 }
 
 .importante {
@@ -222,7 +221,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .cta button {
@@ -244,6 +244,673 @@ h3 {
   box-shadow: 0 8px 20px rgba(0, 180, 27, 0.6);
 }
 
+.texto--video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #1900ff;
+  padding: 18px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.video-texto {
+  font-family: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.seta {
+  width: 19px;
+  filter: invert(1);
+}
+
+.texto--video {
+  animation: pulo 1s infinite;
+}
+
+@keyframes pulo {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tela--video {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  gap: 30px;
+}
+
+.tela--video iframe {
+  width: 750px;
+  height: 422px;
+  border-radius: 10px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.texto--tela {
+  margin-top: 70px;
+  background: linear-gradient(to right); /* 🔥 igual da imagem */
+  padding: 25px;
+  border-radius: 10px;
+
+  font-size: 25px;
+  font-family: bold;
+  text-align: center;
+}
+
+.como {
+  font-size: 40px;
+  font-family: ebold;
+  display: block;
+  margin-top: 10px;
+  color: linear-gradient(to right, #008cff, #005499);
+  text-shadow: 0 0 20px rgba(0, 140, 255, 0.4);
+  color: #1a00ff;
+}
+
+.copy {
+  font-family: regular;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+
+  width: 90%; /* 🔥 ocupa 90% da tela */
+  margin: 50px auto; /* 🔥 centraliza */
+
+  padding: 40px;
+
+  background: linear-gradient(to right, #0022ff, #001499);
+  border-radius: 8px;
+
+  color: white;
+}
+
+.copy > div {
+  flex: 1; /* 🔥 todas com mesmo tamanho */
+}
+
+.copy1,
+.copy2 {
+  border-right: 2px solid rgba(255, 255, 255, 0.4);
+  padding-right: 20px;
+}
+
+.copy1,
+.copy2 {
+  border-right: 2px solid rgba(255, 255, 255, 0.4);
+  padding-right: 20px;
+}
+
+.container--3 {
+  background: linear-gradient(to right, #0022ff, #001499);
+}
+
+.titulo {
+  font-size: 45px;
+  padding-top: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: bold;
+  color: white;
+}
+
+.texto--nota--fiscal {
+  font-family: bold;
+  font-size: 13px;
+  margin: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.nota--fiscal {
+  margin-top: 50px;
+  margin-left: 200px;
+  gap: 5px;
+  width: 90%;
+  max-width: 415px;
+
+  background: linear-gradient(to bottom, #ffffff, #c8c8c8);
+  border-radius: 30px;
+}
+
+.valor-final-nota {
+  font-size: 30px;
+  font-family: ebold;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.linha--divisoria {
+  width: 90%;
+  height: 3px;
+  background: black;
+  margin: 20px auto;
+  border-radius: 3px;
+}
+
+.valor--final {
+  background: linear-gradient(to right, #ff0000, #cf0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.valor-final-nota .valor--final {
+  border-bottom: 4px solid red;
+}
+
+.modulos-preco {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.texto--lado--nota {
+  margin-top: 50px;
+  margin-left: 150px;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* cria contexto seguro */
+}
+
+.texto--lado--nota::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 900px;
+  height: 320px;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5),
+    transparent 70%
+  );
+
+  filter: blur(35px);
+  z-index: -1;
+
+  pointer-events: none;
+}
+
+.tudo-apenas {
+  color: white;
+  font-family: thin;
+  font-size: 60px;
+}
+
+.preco--total {
+  color: white;
+  font-family: ebold;
+  font-size: 150px;
+  margin-bottom: 10px;
+}
+
+.economia {
+  color: white;
+  font-family: bold;
+  font-size: 15px;
+  text-shadow: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cta2 button {
+  text-align: center;
+  background: linear-gradient(45deg, #00b41b, #00e62e);
+  color: white;
+  border: none;
+  padding: 20px 115px;
+  font-size: 18px;
+  font-family: ebold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 180, 27, 0.4);
+  transition: all 0.3s ease;
+}
+
+.cta2 button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 180, 27, 0.6);
+}
+
+.bolas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 200px;
+}
+
+.bolas img {
+  margin: 30px;
+  background: linear-gradient(to bottom, #ff00d9, #ff91ee);
+  padding: 40px;
+  border-radius: 150px;
+}
+
+.bolas img {
+  width: 150px;
+  filter: invert(1);
+  margin-bottom: 15px;
+}
+
+.bola1,
+.bola2,
+.bola3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.texto--b1,
+.texto--b2,
+.texto--b3 {
+  font-family: bold;
+  font-size: 25px;
+  color: white;
+  max-width: 200px;
+}
+
+.voce {
+  color: white;
+  margin-top: 240px;
+  font-size: 40px;
+  font-family: ebold;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.voce::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 1500px;
+  height: 200px; /* 🔥 aumenta aqui ao invés do padding */
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5),
+    transparent 35%
+  );
+
+  filter: blur(70px);
+
+  z-index: -1;
+  pointer-events: none;
+}
+
+.aumentar {
+  height: 300px;
+}
+
+.medio {
+  margin-top: 150px;
+  margin-left: 150px;
+  font-family: ebold;
+  font-size: 50px;
+}
+
+.designer {
+  font-family: ebold;
+  font-size: 50px;
+  padding-bottom: 8px;
+
+  background: linear-gradient(to right, #1900ff, #0a0068);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.referencia {
+  margin-top: 15px;
+  font-family: regular;
+  font-size: 25px;
+  margin-left: 150px;
+}
+
+.vagas {
+  margin-top: 50px;
+  margin-left: 150px;
+  font-family: regular;
+  font-size: 25px;
+}
+
+.nvagas {
+  font-family: bold;
+}
+
+.linkedin {
+  font-family: ebold;
+  background: linear-gradient(to right, #00b7ff, #00548b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta3 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 150px;
+  margin-bottom: -380px;
+  /* ADICIONADO: Traz o botão para frente para voltar a ser clicável */
+  position: relative;
+  z-index: 10;
+}
+
+/* ... mantenha o resto do css do botão ... */
+.cta3 button {
+  text-align: center;
+  background: linear-gradient(45deg, #00b41b, #00e62e);
+  color: white;
+  border: none;
+  padding: 20px 42px;
+  font-size: 18px;
+  font-family: ebold;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 180, 27, 0.4);
+  transition: all 0.3s ease;
+}
+
+.cta3 button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 180, 27, 0.6);
+}
+
+.linha {
+  position: relative;
+  margin-top: 0; /* Garante que ela encoste no gráfico */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0022ff;
+  width: 90%;
+  height: 30px;
+  z-index: 1;
+}
+
+.faixa--salario {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: flex-end; /* Mantém tudo grudado embaixo */
+  justify-content: flex-end;
+  margin-right: 79px;
+  height: 520px; /* Mantém a linha azul fixa */
+  margin-top: 40px;
+}
+
+/* Padronizei as colunas J, P e S */
+.j,
+.p,
+.s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.valord {
+  font-size: 40px;
+  color: black;
+  font-family: bold;
+  text-align: center;
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums; /* Evita tremer os lados */
+}
+/* Estilo base para todos os retângulos */
+.junior,
+.pleno,
+.senior {
+  box-sizing: border-box; /* Garante que o tamanho seja exato */
+  width: 110px; /* Largura fixa do retângulo */
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(to right, #00548b, #00b7ff);
+
+  color: white;
+  font-family: bold;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* IMPORTANTE: Removemos os paddings antigos que causavam o bug */
+  padding: 0;
+}
+
+.retangulo1,
+.retangulo2,
+.retangulo3 {
+  height: 0px; /* Começam zerados */
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 110px;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(to right, #00548b, #00b7ff);
+
+  color: white;
+  font-family: bold;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.faixa--salario {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: flex-end; /* Garante que os elementos comecem colados na base */
+  justify-content: flex-end;
+  margin-right: 79px;
+
+  /* --- AS MUDANÇAS ESTÃO AQUI --- */
+  height: 520px; /* Damos uma altura fixa para o gráfico (maior que a maior barra + número) */
+  margin-top: 40px; /* Removemos o valor negativo para não dar bug */
+}
+
+.valord {
+  font-size: 40px;
+  color: black;
+  font-family: bold;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+/* AGORA É SÓ MEXER NA ALTURA AQUI! ELES VÃO CRESCER PARA CIMA */
+.retangulo1 {
+  height: 250px;
+}
+.retangulo2 {
+  height: 350px;
+}
+.retangulo3 {
+  height: 450px;
+} /* No seu HTML original você tinha repetido a classe 2 no Sênior */
+.container--5 {
+  padding: 80px 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-wrapper {
+  width: 100%;
+  max-width: 800px;
+}
+
+.faq-title-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.faq-title-area h2 {
+  font-size: 45px;
+  font-family: "ebold", sans-serif;
+  color: black;
+  margin: 0;
+}
+
+.faq-estrela {
+  color: #0022ff;
+  font-size: 40px;
+}
+
+.faq-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-pergunta {
+  width: 100%;
+  padding: 25px 40px;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: bold;
+  color: #444;
+}
+
+.faq-pergunta:hover {
+  background-color: #d5d5d5;
+}
+
+.seta-azul {
+  color: #0022ff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.ativo .seta-azul {
+  transform: rotate(180deg);
+}
+
+.faq-resposta {
+  font-family: regular;
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease-out,
+    padding 0.3s ease;
+  padding: 0 40px;
+  background-color: #e0e0e0;
+}
+
+.faq-item.ativo .faq-resposta {
+  max-height: 300px;
+  padding-bottom: 25px;
+}
+
+.faq-resposta p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.cta4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cta4 button {
+  text-align: center;
+  background: linear-gradient(45deg, #00b41b, #00e62e);
+  color: white;
+  border: none;
+  padding: 20px 115px;
+  font-size: 18px;
+  font-family: ebold;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 180, 27, 0.4);
+  transition: all 0.3s ease;
+}
+
+.cta4 button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 180, 27, 0.6);
+}
 @media (max-width: 390px) {
   .urgente {
     font-size: 15px;
@@ -271,7 +938,6 @@ h3 {
     margin-top: 15px;
     flex-direction: column; /* 🔥 empilha */
     align-items: center;
-
   }
 
   .ant--preco {
@@ -282,14 +948,15 @@ h3 {
   }
 
   .atual--valor {
-  font-size: 100px;
-  line-height: 1;
-}
+    font-size: 100px;
+    line-height: 1;
+  }
 
-.vitalicio {
-  font-size: 30px;
-}
+  .vitalicio {
+    font-size: 30px;
+  }
 
-.cta button {
-  font-size: 20px;
+  .cta button {
+    font-size: 20px;
+  }
 }
