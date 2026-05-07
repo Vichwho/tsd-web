@@ -381,6 +381,10 @@ h3 {
   color: white;
 }
 
+.titulo br {
+  display: none;
+}
+
 .texto--nota--fiscal {
   font-family: bold;
   font-size: 13px;
@@ -413,6 +417,10 @@ h3 {
   background: black;
   margin: 20px auto;
   border-radius: 3px;
+}
+
+.valor-final-nota br {
+  display: none;
 }
 
 .valor--final {
@@ -784,6 +792,7 @@ h3 {
 .retangulo3 {
   height: 450px;
 } /* No seu HTML original você tinha repetido a classe 2 no Sênior */
+
 .container--5 {
   padding: 80px 20px;
   background-color: white;
@@ -957,6 +966,464 @@ h3 {
   }
 
   .cta button {
+    font-size: 15px;
+  }
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto--video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1900ff;
+    padding: 15px;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+
+  .tela--video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tela--video iframe {
+    margin-top: 30px;
+    margin-left: 0;
+    width: 250px;
+    height: 180px;
+  }
+
+  .conteudo {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .texto--tela {
+    margin-top: -10px;
+    font-size: 15px;
+  }
+
+  .como {
+    font-size: 25px;
+  }
+
+  .video-texto {
+    font-family: bold;
     font-size: 20px;
+    color: white;
+  }
+
+  .seta {
+    width: 19px;
+    filter: invert(1);
+  }
+
+  .texto--tela {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copy {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+
+    width: 90%;
+  }
+  .copy br {
+    display: none;
+  }
+
+  .copy1,
+  .copy2 {
+    border-right: none;
+    padding-right: none;
+  }
+
+  .container--3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo {
+    font-size: 26px;
+  }
+
+  .titulo br {
+    display: inline;
+  }
+
+  .modulos-preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .texto--nota--fiscal {
+    font-size: 10px;
+    margin: 0;
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  .nota--fiscal {
+    width: calc(100% - 24px);
+    max-width: 320px;
+
+    margin: 40px auto 0 auto;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+
+    background: linear-gradient(to bottom, #ffffff, #c8c8c8);
+    border-radius: 30px;
+  }
+
+  .valor-final-nota {
+    font-size: 15px;
+    font-family: ebold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .linha--divisoria {
+    width: 90%;
+    height: 3px;
+    background: black;
+    margin: 20px auto;
+    border-radius: 3px;
+  }
+
+  .linha--divisoria {
+    width: 90%;
+    height: 3px;
+    background: black;
+    margin: 20px auto;
+    border-radius: 3px;
+  }
+
+  .modulos-preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valor-final-nota br {
+    display: inline;
+  }
+
+  .texto--lado--nota {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .texto--lado--nota::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 100px;
+
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.5),
+      transparent 70%
+    );
+
+    filter: blur(35px);
+    z-index: -1;
+
+    pointer-events: none;
+  }
+
+  .tudo-apenas {
+    color: white;
+    font-family: thin;
+    font-size: 25px;
+  }
+
+  .preco--total {
+    color: white;
+    font-family: ebold;
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+
+  .economia {
+    color: white;
+    font-family: bold;
+    font-size: 15px;
+    text-shadow: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta2 {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .cta2 button {
+    text-align: center;
+    background: linear-gradient(45deg, #00b41b, #00e62e);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 15px;
+    font-family: ebold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 180, 27, 0.4);
+    transition: all 0.3s ease;
+  }
+
+  .bolas {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+  }
+
+  .bolas img {
+    margin: 0px;
+    background: linear-gradient(to bottom, #ff00d9, #ff91ee);
+    padding: 40px;
+    border-radius: 150px;
+  }
+
+  .bolas img {
+    width: 100px;
+    filter: invert(1);
+    margin-bottom: 15px;
+  }
+
+  .bola1,
+  .bola2,
+  .bola3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto--b1,
+  .texto--b2,
+  .texto--b3 {
+    font-family: bold;
+    font-size: 25px;
+    color: white;
+    max-width: 200px;
+  }
+
+  .voce {
+    margin-top: 80px;
+    font-size: 20px;
+  }
+
+  .aumentar {
+    height: 100px;
+  }
+
+  .voce br {
+    display: none;
+  }
+
+  .container--4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medio,
+  .referencia,
+  .vagas {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .medio {
+    font-size: 35px;
+    margin-top: 60px;
+  }
+
+  .designer {
+    font-size: 35px;
+  }
+
+  .referencia {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .vagas {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .cta3 {
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .cta3 button {
+    font-size: 15px;
+    padding: 18px 30px;
+  }
+
+  .faixa--salario {
+    justify-content: center;
+    align-items: flex-end;
+
+    gap: 15px;
+
+    margin-right: 0;
+
+    width: 100%;
+    overflow-x: auto;
+
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .j,
+  .p,
+  .s {
+    width: auto;
+  }
+
+  .valord {
+    font-size: 20px;
+  }
+
+  .retangulo1 {
+    height: 140px;
+    width: 80px;
+  }
+
+  .retangulo2 {
+    height: 200px;
+    width: 80px;
+  }
+
+  .retangulo3 {
+    height: 260px;
+    width: 80px;
+  }
+
+  .linha {
+    align-items: center;
+  }
+
+  .linha {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background-color: #0022ff;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+  }
+  .container--5 {
+    padding: 50px 15px;
+  }
+
+  .faq-wrapper {
+    width: 100%;
+  }
+
+  .faq-title-area {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+
+  .faq-title-area h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .faq-estrela {
+    font-size: 24px;
+  }
+
+  .faq-lista {
+    gap: 15px;
+  }
+
+  .faq-item {
+    border-radius: 25px;
+  }
+
+  .faq-pergunta {
+    padding: 18px 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .seta-azul {
+    font-size: 14px;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+
+  .faq-resposta {
+    padding: 0 20px;
+  }
+
+  .faq-item.ativo .faq-resposta {
+    padding-bottom: 20px;
+  }
+
+  .faq-resposta p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .cta4 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .cta4 button {
+    width: calc(100% - 20px);
+    max-width: 320px;
+
+    padding: 18px 20px;
+
+    font-size: 15px;
+
+    border-radius: 25px;
   }
 }
