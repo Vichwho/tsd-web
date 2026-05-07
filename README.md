@@ -15,6 +15,8 @@ Todo o projeto foi planejado visualmente no **Figma** antes de iniciar o desenvo
 *   **Protótipo Interativo:** Você pode navegar pelo design completo e testar o fluxo planejado diretamente no navegador.
 *   **Link do Projeto:** [👉 Visualizar Protótipo no Figma](https://www.figma.com/proto/C6YXAcYRtIUsA7nwOWlbPQ/TSD?node-id=25-29&t=Ik5gvhGXmF36CRTt-1)
 
+
+
 ---
 
 ### 🚀 Status do Projeto e Evolução
@@ -23,6 +25,24 @@ Todo o projeto foi planejado visualmente no **Figma** antes de iniciar o desenvo
 #### **Etapas de Desenvolvimento:**
 *   **Estudo Prévio:** Pesquisa sobre as estruturas de uma "Landing Page Perfeita" para otimizar a experiência do usuário.
 *   **Desenvolvimento:** Codificação finalizada em 06 de maio de 2024, transformando o protótipo do Figma em um site funcional.
+
+### **Prints do projeto**
+
+<img width="1915" height="904" alt="image" src="https://github.com/user-attachments/assets/bc532276-6790-494e-9bce-b0ee8c92bcad" /> <br>
+
+<img width="1919" height="901" alt="image" src="https://github.com/user-attachments/assets/22b16fb0-a73c-424f-b91f-3b0cd92f7019" /> <br>
+
+
+<img width="1919" height="902" alt="image" src="https://github.com/user-attachments/assets/7c2f1018-aad9-4cc6-bff9-56d58ddc2e06" /> <br>
+
+
+
+<img width="1919" height="880" alt="image" src="https://github.com/user-attachments/assets/63a31334-5407-453a-b53e-ca33e117ad9c" /> <br>
+
+
+<img width="1919" height="754" alt="image" src="https://github.com/user-attachments/assets/0711fdbf-b2ac-4fdc-bd54-01761f8108a9" /> <br>
+
+## **[👉 Visualizar projeto Online](https://tudosobredesign.netlify.app/)**
 
 ---
 
