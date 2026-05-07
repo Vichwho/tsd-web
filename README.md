@@ -28,19 +28,8 @@ Todo o projeto foi planejado visualmente no **Figma** antes de iniciar o desenvo
 
 ### **Prints do projeto**
 
-<img width="1915" height="904" alt="image" src="https://github.com/user-attachments/assets/bc532276-6790-494e-9bce-b0ee8c92bcad" /> <br>
+<img width="1920" height="4872" alt="TSD - LP complete" src="https://github.com/user-attachments/assets/43fa96d7-2418-4bcd-be26-4fcf35d2eca9" />
 
-<img width="1919" height="901" alt="image" src="https://github.com/user-attachments/assets/22b16fb0-a73c-424f-b91f-3b0cd92f7019" /> <br>
-
-
-<img width="1919" height="902" alt="image" src="https://github.com/user-attachments/assets/7c2f1018-aad9-4cc6-bff9-56d58ddc2e06" /> <br>
-
-
-
-<img width="1919" height="880" alt="image" src="https://github.com/user-attachments/assets/63a31334-5407-453a-b53e-ca33e117ad9c" /> <br>
-
-
-<img width="1919" height="754" alt="image" src="https://github.com/user-attachments/assets/0711fdbf-b2ac-4fdc-bd54-01761f8108a9" /> <br>
 
 ## **[👉 Visualizar projeto Online](https://tudosobredesign.netlify.app/)**
 
