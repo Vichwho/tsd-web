@@ -28,7 +28,7 @@ Todo o projeto foi planejado visualmente no **Figma** antes de iniciar o desenvo
 
 ### **Prints do projeto**
 
-<img width="720" height="4872" alt="TSD - LP complete" src="https://github.com/user-attachments/assets/43fa96d7-2418-4bcd-be26-4fcf35d2eca9" />
+<img width="1920" height="4872" alt="TSD - LP complete" src="https://github.com/user-attachments/assets/43fa96d7-2418-4bcd-be26-4fcf35d2eca9" />
 
 
 ## **[👉 Visualizar projeto Online](https://tudosobredesign.netlify.app/)**
