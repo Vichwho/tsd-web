@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "bold";
+  src: url("../assets/fonts/linespeed/LINESeedJP-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ebold";
+  src: url("../assets/fonts/linespeed/LINESeedJP-ExtraBold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../assets/fonts/linespeed/LINESeedJP-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "thin";
+  src: url("../assets/fonts/linespeed/LINESeedJP-Thin.ttf") format("truetype");
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+  background-image: url(../assets/iconstds/fundo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.container--1 {
+  height: 760px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.blur-light {
+  margin-top: 10px;
+
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 1;
+
+  top: 100px;
+  z-index: 0;
+}
+
+.logo-1 {
+  margin-top: 120px;
+  align-items: centers;
+  z-index: 1;
+  width: 80px;
+}
+
+.logo-2 {
+  margin-top: -10px;
+  margin-bottom: 60px;
+  z-index: 1;
+  width: 150px;
+}
+
+.texto--1 {
+  font-size: 65px;
+  font-family: ebold;
+  background: linear-gradient(to right, #1A00FF, #0F0099);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position: relative;
+  z-index: 1;
+}
+
+
+.texto--2 {
+  font-family: regular;
+  z-index: 1;
+
+  margin-top: 60px;
+  font-size: 25px;
+}
+
+.cta button {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  
+  margin-top: 15px;
+  font-family: bold;
+  padding-top: 20Px;
+  padding-bottom: 20px;
+  padding-left: 120px;
+  padding-right: 120px;
+
+  border-radius: 100px;
+  border-style: none;
+  background: linear-gradient(45deg, #00b41b, #00e62e);;
+
+   box-shadow: 0 5px 15px rgba(0, 180, 27, 0.4);
+  transition: all 0.3s ease;
+
+}
+
+.cta button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 180, 27, 0.6);
+}
+
+
+.container--2{
+  margin-top: 50px;
+  height: 150px;
+  background: linear-gradient(to right, #1A00FF, #0F0099);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.bio {
+  font-family: bold;
+  color: white;
+  align-items: center;
+  margin-top: 65px;
+}
